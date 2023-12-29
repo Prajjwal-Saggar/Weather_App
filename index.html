@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>Weather App</h1>
+      <div class="tabs">
+        <div class="upper-btn" userWeather>Your Weather</div>
+        <div class="upper-btn" searchWeather>Search Weather</div>
+      </div>
+      <!-- user location div  -->
+      <div class="user-location" userSpace>
+        <h2 cityName></h2>
+        <img
+          src=""
+          alt=""
+          id="img-icon"
+          width="80px"
+          height="80px"
+          image-weather
+        />
+        <h2 cityTemprature></h2>
+        <div class="three-box">
+          <div class="boxes">
+            <img src="./assets/humidity.png" height="50px" width="50px" />
+            <p>Humidity</p>
+            <p humidity></p>
+          </div>
+          <div class="boxes">
+            <img src="./assets/wind.png" alt="" height="50px" width="50px" />
+            <p>Wind Speed</p>
+            <p speed></p>
+          </div>
+          <div class="boxes">
+            <img
+              src="./assets/air-quality.png"
+              alt=""
+              height="50px"
+              width="50px"
+            />
+            <p>Air Quality</p>
+            <p quality></p>
+          </div>
+        </div>
+      </div>
+<!-- Search Location Div  -->
+      <div class="search-weather" searchingSpace>
+        <div class="input-city"><input type="text" value="" id="fetchInput" />
+        <button id = "submitButton"><i class="ri-search-2-line"></i></button></div>
+
+        <div class="search-main-content"> <h2 cityNameS></h2>
+          <img
+            src=""
+            alt=""
+            id="img-iconS"
+            width="80px"
+            height="80px"
+            image-weatherS
+          />
+          <h2 cityTempratureS></h2>
+          <div class="three-box">
+            <div class="boxes">
+              <img src="./assets/humidity.png" height="50px" width="50px" />
+              <p>Humidity</p>
+              <p humidityS></p>
+            </div>
+            <div class="boxes">
+              <img src="./assets/wind.png" alt="" height="50px" width="50px" />
+              <p>Wind Speed</p>
+              <p speedS></p>
+            </div>
+            <div class="boxes">
+              <img
+                src="./assets/air-quality.png"
+                alt=""
+                height="50px"
+                width="50px"
+              />
+              <p>Air Quality</p>
+              <p qualityS></p>
+            </div>
+          </div></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
